@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aatman | Portfolio</title>
+    <meta name="description" content="Portfolio of Aatman — projects, experience, and contact." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:title" content="Aatman | Portfolio" />
+    <meta property="og:description" content="Projects, experience, and how to contact me." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#">Aatman</a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+          <ul id="menu" class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌓</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" tabindex="-1">
+      <section class="hero">
+        <div class="container">
+          <h1>Hello, I'm <span class="accent">Aatman</span>.</h1>
+          <p class="lead">I build reliable, accessible, and performant web experiences.</p>
+          <div class="cta-group">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I'm a software engineer focused on building products end‑to‑end. I care about
+            clean architecture, developer experience, and delightful UX.
+          </p>
+          <ul class="tags" aria-label="Skills">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>CI/CD</li>
+            <li>Accessibility</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section alt">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="grid projects">
+            <article class="card">
+              <div class="card-body">
+                <h3>Project One</h3>
+                <p>Short description of what this does and why it matters.</p>
+              </div>
+              <div class="card-footer">
+                <a class="button small" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="button small" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <h3>Project Two</h3>
+                <p>Briefly explain the tech stack and your role.</p>
+              </div>
+              <div class="card-footer">
+                <a class="button small" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="button small" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <h3>Project Three</h3>
+                <p>One‑liner value prop and outcome.</p>
+              </div>
+              <div class="card-footer">
+                <a class="button small" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="button small" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <h2>Experience</h2>
+          <ul class="timeline">
+            <li>
+              <div>
+                <h3>Company Name — Role</h3>
+                <p class="muted">2022 — Present</p>
+                <p>One or two lines about impact and responsibilities.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Previous Co. — Role</h3>
+                <p class="muted">2020 — 2022</p>
+                <p>Highlights or achievements in the role.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>Want to collaborate or have a question? Reach out.</p>
+          <div class="cta-group">
+            <a class="button primary" href="mailto:your.email@example.com">Email Me</a>
+            <a class="button" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Aatman</p>
+        <a href="#" class="top-link">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+  </html>
+
+
