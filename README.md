@@ -1,34 +1,29 @@
-# Portfolio
+# Minimal profile (Jekyll)
 
-Static portfolio site for GitHub Pages.
+This is a minimal profile site built with Jekyll and the `jekyll-theme-minimal` theme. Edit a simple markdown file to update your profile.
+
+## Edit content
+
+- Main content: edit `index.md`
+- Site title/description: edit `_config.yml`
 
 ## Local preview
 
-- Option 1: Open `index.html` directly in a browser
-- Option 2: Serve with a local server (recommended for routing and assets):
+You can preview without installing anything by opening the built site via Docker (optional) or using GitHub Pages directly after pushing.
+
+If you have Ruby locally and want to preview:
 
 ```bash
-python3 -m http.server 5173
-# then open http://localhost:5173
+gem install jekyll jekyll-seo-tag
+jekyll serve --livereload
+# open http://127.0.0.1:4000
 ```
 
-## Deploy to GitHub Pages (via Actions)
+## Deploy to GitHub Pages
 
-This repository includes an Actions workflow that deploys the site on every push to `main`.
+Pushing to `main` triggers the Actions workflow to build the site and publish to Pages. The URL will appear in the workflow run under the Deploy step, or in Settings → Pages.
 
-Steps:
+## Notes
 
-1. Create a new GitHub repository and push this code.
-2. Ensure Actions are enabled for the repository.
-3. The workflow will build and publish to GitHub Pages automatically.
-4. Check the deployment URL in the Actions run summary or in Settings → Pages.
-
-If your repository is named `<username>.github.io`, the site will be available at `https://<username>.github.io/`.
-
-## Customize
-
-- Edit content in `index.html`
-- Update styles in `styles.css`
-- JS behavior (theme toggle, navigation) in `script.js`
-
-
+- No custom JS or CSS is needed; the theme provides defaults.
+- You can add more pages by creating more `.md` files.

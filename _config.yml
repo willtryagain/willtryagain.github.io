@@ -1,0 +1,21 @@
+title: "Aman Atman"
+description: "Minimal profile and links"
+theme: jekyll-theme-minimal
+
+# Optional site settings
+logo: 
+show_downloads: false
+
+# Keep URLs clean
+permalink: pretty
+
+# Plugins supported on GitHub Pages
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - .github/
+  - node_modules/
+  - vendor/
+
